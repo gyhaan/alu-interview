@@ -17,3 +17,7 @@ def min_operations(n):
         factor += 1
 
     return operations
+
+
+peter = min_operations(21)
+print(peter)
