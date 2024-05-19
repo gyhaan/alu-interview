@@ -1,28 +1,24 @@
 #!/usr/bin/python3
-""""
-Trying to write a function that calculates minimum operations
+"""In a text file, there is a single character H. Your text editor can execute
+only two operations in this file: Copy All and Paste. Given a number n, write
+a method that calculates the fewest number of operations needed to result in
+exactly n H characters in the file.
 """
 
+
 def minOperations(n):
-
-    """"
-    This function will find the minimum number of operations needed
-    """
-
-    if n <= 1:
+    if n < 2:
         return 0
 
-    operations = 0
-    factor = 2
+    current_num_of_h = 1
+    copied = 0
+    num_of_operations = 0
 
-    while n > 1:
-        while n % factor == 0:
-            operations += factor
-            n //= factor
-        factor += 1
+    while current_num_of_h < n:
+        if n % current_num_of_h == 0:
+            copied = current_num_of_h
+            num_of_operations += 1
 
-    return operations
-
-
-peter = min_operations(21)
-print(peter)
+        current_num_of_h += copied
+        num_of_operations += 1
+    return num_of_operations
