@@ -2,7 +2,10 @@
 """"Trying to write a function that calculates minimum operationss"""
 
 def minOperations(n):
-    """"This function will find the minimum number of operations needed"""
+
+    """"
+    This function will find the minimum number of operations needed
+    """
 
     if n <= 1:
         return 0
