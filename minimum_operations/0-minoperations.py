@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""""Trying to write a function that calculates minimum operationss"""
 
 def min_operations(n):
     """"This function will find the minimum number of operations needed"""
