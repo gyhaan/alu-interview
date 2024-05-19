@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""""Trying to write a function that calculates minimum operationss"""
+""""
+Trying to write a function that calculates minimum operations
+"""
 
 def minOperations(n):
 
